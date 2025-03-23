@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+        maven {
+            credentials {
+                username 'OxF000'
+                password 'ghp_' + 'wtRzY0Ih1QYCESpFdvloISxlXfv9mC1XJUO0'
+            }
+            url 'https://maven.pkg.github.com/OxF000/release-repo/'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+include ':library'
+include ':app'
+rootProject.name = "KeepAlivePerfect"
