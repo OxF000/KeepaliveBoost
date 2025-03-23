@@ -107,7 +107,6 @@ Service 需要继承 `KeepAliveService`，否则在 Android 4.4 上将没有保�
 startService(new Intent(MainActivity.this, Service1.class));
 ```
 
-如果需要服务自启动，请参见第6条。
 
 4. **忽略电池优化**
 
